@@ -1,5 +1,7 @@
-# cv.raresrobotin.github.io
+# Design Concept
+
+my-html-css-js-cv
 
 ## Live
 
-[cv.raresrobotin.github.io](http://cv.raresrobotin.github.io)
+[cv.raresrobotin.github.io](https://raresrobotin.github.io/cv.raresrobotin.github.io)
