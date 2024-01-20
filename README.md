@@ -2,4 +2,4 @@
 
 ## Live
 
-[cv.raresrobotin.github.io](http://cv.raresrobotin.github.io/)
+[cv.raresrobotin.github.io](http://cv.raresrobotin.github.io)
