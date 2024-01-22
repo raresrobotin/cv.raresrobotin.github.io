@@ -68,6 +68,24 @@ function showSkills() {
   ul.innerHTML = text.join("");
 }
 
+// TEMA
+function showRubik() {
+  var div = document.querySelector("#rubik-cube");
+  console.warn("am selectat:", div);
+
+  var cubes = ["div", "div", "div"];
+  console.warn("cubes:", typeof cubes);
+
+  var rubik = cubes.map(function (cube) {
+    console.info("inside %o map", cube);
+    return `<div>${cubes}<div/>`;
+  });
+  console.warn(rubik);
+
+  div.innerHTML = rubik;
+}
+showRubik();
+
 //executii
 showSkills();
 showPage(activePage);
