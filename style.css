@@ -1,12 +1,14 @@
 html {
   height: 100%;
+  
 }
 
 #flexbox-container {
   flex: 2;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(100deg, #03657e99, transparent);
+  background-color: rgb(8, 49, 113);
+  /* background: linear-gradient(100deg, #03657e99, transparent); */
   align-items: center;
   gap: 0px;
 }
@@ -38,14 +40,17 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(235, 231, 231);
+  /* background-color: #060c21; */
+  /* background-color: rgba(234, 237, 241, 0.877); */
 }
 
 #content {
   flex: 1;
   display: flex;
   flex-direction: row;
-  background-color: gainsboro;
+  /* background: linear-gradient(90deg, rgb(23, 71, 169), transparent) */
+  background-color: rgb(8, 49, 113);
+  /* background-color: gainsboro; */
   flex-wrap: wrap-reverse;
   justify-content: flex-start;
 }
@@ -59,6 +64,8 @@ body {
   padding: 10px;
   box-shadow: 0px 1px 2px 1px;
   border-radius: 10px 10px 10px 10px;
+  border-color: aquamarine;
+  border-style: double;
 }
 
 #side-menu > section h2 {
@@ -111,8 +118,12 @@ body {
   margin: 5px;
   padding: 10px;
   box-shadow: 0px 1px 2px 1px;
+  scrollbar-shadow-color:rgb(7, 182, 245);;
   border-radius: 10px 10px 10px 10px;
-  background-color: white;
+  border-style: double;
+  border-color:rgb(7, 182, 245);;
+  /* background-color: white */
+  /* background-color: rgb(8, 49, 113); */
 }
 
 .page {
@@ -123,7 +134,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #334455;
+  background-color: #060c21;
   padding: 5px;
 }
 
@@ -138,7 +149,7 @@ body {
   margin-top: 20px;
   font-family: "Arial", sans-serif;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(150, 15, 15, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -176,13 +187,17 @@ th {
 */
 
 #job-title {
-  color: rgba(2, 22, 29, 0.692);
+  color: rgb(7, 182, 245);
   text-align: left;
+}
+
+#job-title p {
+  color: aqua;
 }
 
 #top-menu-bar {
   text-align: center;
-  background-color: #334455;
+  background-color: #060c21;
   color: #fff;
   margin: 0px;
   padding: 4px;
@@ -225,4 +240,9 @@ td.favorite {
 
 #skills li span {
   color: green;
+}
+
+body p {
+  /* color: rgb(42, 218, 218); */
+  color: rgb(7, 182, 245);
 }
