@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+   height: 100%;
   
 }
 
@@ -12,8 +12,7 @@ html {
   background-color: #090909;
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png"); */
     background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
-  align-items: center;
-  gap: 0px;
+  align-items:center;
 }
 
 #flexbox-item img {
@@ -24,7 +23,7 @@ html {
   /* box-shadow: 2px 2px 5px 2px; */
   box-shadow: 0 0 15px rgb(7, 182, 245),
               0 0 5px rgb(7, 182, 245);
-  margin: 10px;
+  margin: 10px; 
 }
 
 #flexbox-item {
@@ -38,7 +37,7 @@ html {
   min-height: 120px;
   flex: 1;
   padding: 10px;
-  color: #f2f9f9;
+  color: #f2f9f9; */
 }
 
 body {
@@ -48,12 +47,20 @@ body {
   flex-direction: column;
   /* background-color: #060c21; */
   /* background-color: rgba(234, 237, 241, 0.877); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png") */
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  background-color: #090909;
   }
 
 #content {
-  flex: 1;
+  flex: 4;
   display: flex;
   flex-direction: row;
+  /* max-width: var(--max-width); */
+  width: 75%;
+  margin: 0 auto;
+  padding: 8px;
+  gap: 1rem;
   /* background: linear-gradient(90deg, rgb(23, 71, 169), transparent) */
   /* background-color: rgb(8, 49, 113); */
   /* background-color: gainsboro; */
@@ -65,7 +72,10 @@ body {
 }
 #side-menu {
   flex: 1;
+  display:flex;
+  flex-direction: column;
   padding: 5px 5px 5px 5px;
+  gap: 10px
 }
 
 #side-menu > section {
@@ -84,6 +94,7 @@ body {
 #side-menu > section h2 {
   margin: 0 0 10px 0;
   color: #ffffff;
+  padding-left: 10px ;
 }
 
 #contact-form {
@@ -142,8 +153,8 @@ body {
   /* background-color: white */
   /* background-color: rgb(8, 49, 113); */
   /* background-color: #090909; */
-  background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png"); */
-  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/hexellence.png"); */
 }
 
 .page {
@@ -155,7 +166,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #060c21;
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer-item {
@@ -265,7 +276,8 @@ td.favorite {
 }
 
 body p {
-   color: rgb(7, 182, 245);
+   color: rgb(5, 183, 247);
+   text-decoration: solid;
 }
 
 body h2 {
@@ -323,5 +335,5 @@ button:hover {
   box-shadow: 0 0 5px cyan,
               0 0 25px cyan, 0 0 50px cyan,
               0 0 100px cyan, 0 0 200px cyan;
-   transform: translate(0px, -6px);
+   /* transform: translate(0px, -6px); */
 }
