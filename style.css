@@ -37,7 +37,7 @@ html {
   min-height: 120px;
   flex: 1;
   padding: 10px;
-  color: #f2f9f9; */
+  color: #f2f9f9;
 }
 
 body {
@@ -53,14 +53,14 @@ body {
   }
 
 #content {
-  flex: 4;
+  flex: 5;
   display: flex;
   flex-direction: row;
   /* max-width: var(--max-width); */
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
-  padding: 8px;
-  gap: 1rem;
+  padding: 5px;
+  gap: 8px;
   /* background: linear-gradient(90deg, rgb(23, 71, 169), transparent) */
   /* background-color: rgb(8, 49, 113); */
   /* background-color: gainsboro; */
@@ -71,11 +71,11 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
 }
 #side-menu {
-  flex: 1;
+  flex: 2;
   display:flex;
   flex-direction: column;
   padding: 5px 5px 5px 5px;
-  gap: 10px
+  gap: 8px
 }
 
 #side-menu > section {
