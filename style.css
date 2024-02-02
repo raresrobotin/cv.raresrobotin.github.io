@@ -7,11 +7,8 @@ html {
   flex: 2;
   display: flex;
   flex-direction:row;
-  /* background-color: rgb(8, 49, 113); */
-  /* background: linear-gradient(100deg, #03657e99, transparent); */
   background-color: #090909;
-    /* background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png"); */
-    background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
   align-items:center;
 }
 
@@ -20,7 +17,6 @@ html {
   height: 130px;
   border-radius: 15%;
   border: 2px solid #fff;
-  /* box-shadow: 2px 2px 5px 2px; */
   box-shadow: 0 0 15px rgb(7, 182, 245),
               0 0 5px rgb(7, 182, 245);
   margin: 10px; 
@@ -45,9 +41,6 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: #060c21; */
-  /* background-color: rgba(234, 237, 241, 0.877); */
-  /* background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png") */
   background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
   background-color: #090909;
   }
@@ -56,20 +49,16 @@ body {
   flex: 5;
   display: flex;
   flex-direction: row;
-  /* max-width: var(--max-width); */
   width: 85%;
   margin: 0 auto;
   padding: 5px;
   gap: 8px;
-  /* background: linear-gradient(90deg, rgb(23, 71, 169), transparent) */
-  /* background-color: rgb(8, 49, 113); */
-  /* background-color: gainsboro; */
   flex-wrap: wrap-reverse;
   justify-content: flex-start;
   background-color: #090909;
-    /* background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png"); */
-    background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
+  background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
 }
+
 #side-menu {
   flex: 2;
   display:flex;
@@ -83,8 +72,6 @@ body {
   padding: 10px;
   box-shadow: 0px 1px 2px 1px;
   border-radius: 5px 5px 5px 5px;
-  /* border-color: aquamarine; */
-  /* border-color: rgb(7, 182, 245); */
   box-shadow: 0 0 10px rgb(7, 182, 245),
               0 0 10px rgb(7, 182, 245);
   border-style: none;
@@ -150,11 +137,7 @@ body {
   border-radius: 5px 5px 5px 5px;
   border-style: none;
   border-color:rgb(7, 182, 245);
-  /* background-color: white */
-  /* background-color: rgb(8, 49, 113); */
-  /* background-color: #090909; */
   background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
-  /* background-image: url("https://www.transparenttextures.com/patterns/hexellence.png"); */
 }
 
 .page {
@@ -306,7 +289,6 @@ textarea:focus {
 }
 
 button[type="submit"] {
-  /* background-color: rgb(48, 200, 227); */
   background-color: #006bb8;
   color: #fff;
   border: none;
@@ -335,5 +317,4 @@ button:hover {
   box-shadow: 0 0 5px cyan,
               0 0 25px cyan, 0 0 50px cyan,
               0 0 100px cyan, 0 0 200px cyan;
-   /* transform: translate(0px, -6px); */
 }
