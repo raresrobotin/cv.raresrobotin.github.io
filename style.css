@@ -3,6 +3,10 @@ html {
   
 }
 
+header {
+  position: relative;
+}
+
 #flexbox-container {
   flex: 2;
   display: flex;
