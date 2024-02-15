@@ -1,6 +1,5 @@
 html {
-   height: 100%;
-  
+  height: 100%;
 }
 
 header {
@@ -10,10 +9,10 @@ header {
 #flexbox-container {
   flex: 2;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   background-color: #090909;
   background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
-  align-items:center;
+  align-items: center;
 }
 
 #flexbox-item img {
@@ -21,9 +20,8 @@ header {
   height: 130px;
   border-radius: 15%;
   border: 2px solid #fff;
-  box-shadow: 0 0 15px rgb(7, 182, 245),
-              0 0 5px rgb(7, 182, 245);
-  margin: 10px; 
+  box-shadow: 0 0 15px rgb(7, 182, 245), 0 0 5px rgb(7, 182, 245);
+  margin: 10px;
 }
 
 #flexbox-item {
@@ -32,12 +30,13 @@ header {
 }
 
 #flexbox-item-1 {
-  align-items:center;
+  align-items: center;
   justify-content: space-evenly;
   min-height: 120px;
   flex: 1;
   padding: 10px;
   color: #f2f9f9;
+  display: inline-block;
 }
 
 body {
@@ -47,7 +46,7 @@ body {
   flex-direction: column;
   background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
   background-color: #090909;
-  }
+}
 
 #content {
   flex: 5;
@@ -65,10 +64,10 @@ body {
 
 #side-menu {
   flex: 2;
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding: 5px 5px 5px 5px;
-  gap: 8px
+  gap: 8px;
 }
 
 #side-menu > section {
@@ -76,8 +75,7 @@ body {
   padding: 10px;
   box-shadow: 0px 1px 2px 1px;
   border-radius: 5px 5px 5px 5px;
-  box-shadow: 0 0 10px rgb(7, 182, 245),
-              0 0 10px rgb(7, 182, 245);
+  box-shadow: 0 0 10px rgb(7, 182, 245), 0 0 10px rgb(7, 182, 245);
   border-style: none;
   background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
 }
@@ -85,7 +83,7 @@ body {
 #side-menu > section h2 {
   margin: 0 0 10px 0;
   color: #ffffff;
-  padding-left: 10px ;
+  padding-left: 10px;
 }
 
 #contact-form {
@@ -102,6 +100,8 @@ body {
 
 .form-row > label {
   color: rgb(7, 182, 245);
+  font-size: x-large;
+  font-family: monospace;
 }
 
 #button {
@@ -136,11 +136,10 @@ body {
   flex: 5;
   margin: 5px;
   padding: 10px;
-  box-shadow: 0 0 15px rgb(7, 182, 245),
-              0 0 5px rgb(7, 182, 245);
+  box-shadow: 0 0 15px rgb(7, 182, 245), 0 0 5px rgb(7, 182, 245);
   border-radius: 5px 5px 5px 5px;
   border-style: none;
-  border-color:rgb(7, 182, 245);
+  border-color: rgb(7, 182, 245);
   background-image: url("https://www.transparenttextures.com/patterns/dark-denim.png");
 }
 
@@ -164,9 +163,8 @@ body {
 }
 
 .footer-item a:hover {
-  box-shadow: 0 0 5px #006bb8,
-      0 0 25px cyan, 0 0 50px cyan,
-      0 0 100px cyan, 0 0 200px cyan;
+  box-shadow: 0 0 5px #006bb8, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 .stylish-table {
@@ -203,15 +201,37 @@ th:last-child {
   text-align: center;
 }
 
+/*THE TYPING EFFECT*/
+
 #job-title {
-  color: rgb(7, 182, 245);
-  text-align: left;
+  overflow: hidden;
+  border-right: 0.25em solid rgb(255, 255, 255);
+  white-space: nowrap;
+  font-size: 1.3rem;
+  width: none;
+  animation: typing 1s steps(20, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 35%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: orange;
+  }
 }
 
 #job-title p {
   color: aqua;
 }
-
 #top-menu-bar {
   text-align: center;
   background-color: #060c21;
@@ -231,6 +251,8 @@ th:last-child {
   padding: 5px 10px;
   border-radius: 4px;
   transition: 0.5s;
+  font-size: x-large;
+  font-family: monospace;
 }
 #top-menu-bar a:visited {
   color: #fff;
@@ -240,14 +262,13 @@ th:last-child {
 #top-menu-bar a:hover {
   color: #334455;
   background: #fff;
-  box-shadow: 0 0 5px cyan,
-      0 0 25px cyan, 0 0 50px cyan,
-      0 0 100px cyan, 0 0 200px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
 
 .favorite {
   font-weight: bold;
-  color: rgb(10, 10, 238);
+  color: #0396ff;
 }
 
 .favorite li {
@@ -258,17 +279,29 @@ td.favorite {
   font-weight: normal;
 }
 
+#skills {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 #skills li span {
-  color: green;
+  color: rgb(255, 255, 255);
 }
 
 body p {
-   color: rgb(5, 183, 247);
-   text-decoration: solid;
+  color: rgb(5, 183, 247);
+  text-decoration: solid;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: none;
 }
 
 body h2 {
   color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-size: xx-large;
 }
 
 /* NEW CODE */
@@ -278,7 +311,7 @@ input[type="email"],
 textarea {
   border: 2px solid #ccc;
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 5px;
   width: 100%;
   margin-bottom: 20px;
@@ -300,11 +333,11 @@ button[type="submit"] {
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: monospace;
 }
 
 button {
-  box-shadow: 0 0 5px cyan,
-              0 0 15px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 15px cyan;
 
   padding: 10px 10px 10px 10px;
   margin-bottom: 1rem;
@@ -318,7 +351,6 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 0 5px cyan,
-              0 0 25px cyan, 0 0 50px cyan,
-              0 0 100px cyan, 0 0 200px cyan;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
 }
